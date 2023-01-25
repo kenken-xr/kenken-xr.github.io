@@ -1,0 +1,51 @@
+.category-list-container .category-list-content .all-category-list > .all-category-list-item > .all-category-list-link {
+  font-size: 1.1rem;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item::before {
+  position: absolute;
+/* top: 2.37em; */
+  margin-top: 0.4rem;
+  left: 1.7rem;
+  width: 0.43em;
+  height: 0.43em;
+  border: 0.215em solid #49b1f5;
+  border-radius: 0.43em;
+  background: transparent;
+  content: '';
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item:last-child {
+  margin-bottom: 0;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count {
+  padding-left: 1.2rem;
+  color: var(--text-color-3);
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count::before {
+  content: '[';
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count::after {
+  content: ']';
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item ul.all-category-list-child {
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item ul.all-category-list-child li {
+  margin-bottom: 0.9rem;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item ul.all-category-list-child li::before {
+  content: '- ';
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item ul.all-category-list-child li:last-child {
+  margin-bottom: 0;
+}
